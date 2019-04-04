@@ -12,7 +12,7 @@ pipeline {
       steps {
         checkout scm
         sh 'mkdir -p creds' 
-        sh 'echo $SVC_ACCOUNT_KEY | sudo base64 -d > ~/.aws/credentials'
+        sh 'echo $SVC_ACCOUNT_KEY | sudo base64 -d > ~/credentials'
       }
     }
 
