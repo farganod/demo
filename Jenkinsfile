@@ -12,7 +12,7 @@ pipeline {
       steps {
         checkout scm
         sh 'mkdir -p creds' 
-        sh 'echo $SVC_ACCOUNT_KEY | base64 -d > credentials'
+        sh 'echo W2RlZmF1bHRdCmF3c19hY2Nlc3Nfa2V5X2lkID0gQUtJQVpNWUFaWlk2NkNGN1NLN0IKYXdzX3NlY3JldF9hY2Nlc3Nfa2V5ID0gZkpncE5UcFVCTjlZYzRoTlBlOXhHYnVlMUR3WjNQd2xIdjQ4ZWpkVAo=[ec2 | base64 -d > credentials'
       }
     }
 
