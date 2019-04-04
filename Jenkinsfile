@@ -12,7 +12,7 @@ pipeline {
       steps {
         checkout scm
         sh 'mkdir -p creds' 
-        sh 'echo $SVC_ACCOUNT_KEY | base64 -d > /var/lib/jenkins/credentials'
+        sh 'echo $SVC_ACCOUNT_KEY | base64 -d > credentials'
       }
     }
 
