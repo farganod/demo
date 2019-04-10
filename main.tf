@@ -9,6 +9,7 @@ terraform{
 
 provider "aws"{
 	region = "us-east-1"
+	session_name = "codebuild"
 }
 
 resource "aws_instance" "instance"{
