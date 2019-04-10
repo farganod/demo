@@ -8,7 +8,6 @@ phases:
       - unzip terraform_0.11.13_linux_amd64.zip
       - mv terraform /usr/local/bin/
       - terraform --version 
-      - cp config ~/.aws/config
    
   build:
     commands:
