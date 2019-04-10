@@ -13,7 +13,7 @@ phases:
       - echo Initializing terraform
       - terraform init
       - echo Applying terraform build
-      - terraform destroy -auto-approve
+      - terraform apply -auto-approve
   post_build:
     commands:
       - echo Build completed on `date`
