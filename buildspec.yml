@@ -8,7 +8,7 @@ phases:
       - unzip terraform_0.11.13_linux_amd64.zip
       - mv terraform /usr/local/bin/
       - terraform --version 
-      - aws configuration set role_session_name = "codebuild"
+      - curl http://169.254.169.254/latest/meta-data/iam/security-credentials/codebuild-terraform-test-service-role
   build:
     commands:
       - echo Initializing terraform
