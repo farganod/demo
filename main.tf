@@ -13,7 +13,7 @@ provider "aws"{
 
 resource "aws_instance" "instance"{
 	count = 3
-	ami = "ami-02731acf53f0c4a9f"
+	ami = "ami-02eba31f3459d3827"
 	instance_type = "t2.micro"
 	key_name = "DanLunchLearn"
 	vpc_security_group_ids= ["sg-216daf6b"]
